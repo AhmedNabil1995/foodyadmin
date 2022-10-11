@@ -1,0 +1,91 @@
+.sidebar{
+    flex: 1;
+    background-color: white;
+    border-right:1px solid #eee;
+    height: 100%;
+    .hr{
+        border: 1px solid #eee;
+        height: 0;
+    }
+    .top{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span.logo{
+            color: #6439ff;
+            font-weight: bold;
+            font-size: 20px;
+        } 
+    }
+
+    .center{
+       
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 6px 10px;
+                transition: all 0.2s ease;
+                a{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+                .icon{
+                    font-size: 17px;
+                    margin-right: 10px;
+                    color: #6439ff;
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                &:hover{
+                    background-color: #e1d9fc;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+        .bottom{
+            margin-top: 8px;
+            
+            .themeContainer{
+                display: flex;
+                padding-left: 10px;
+                margin-top: 10px;
+                div{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 5px;
+                    background-color: black;
+                    margin-right: 5px;
+                    border: 1px solid black;
+                    cursor: pointer;
+
+                    &:first-child{
+                        background-color: white;
+                    }
+                    &:last-child{
+                        border: 1px solid #aaa;
+                    }
+                }
+            }
+                
+        }
+
+        p{
+            font-weight: 300;
+            margin-top: 10px;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+}

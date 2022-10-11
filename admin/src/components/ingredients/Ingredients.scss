@@ -1,0 +1,93 @@
+.ingredients{
+    font-size: 17px;
+    display: flex;
+    margin: 20px;
+    gap: 50px;
+    form{
+        display: flex;
+        gap: 5px;
+        input{
+            width: 70px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            outline: none;
+            border-radius: 8px;
+        }
+        .nameInput{
+            width: 150px;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            background-color: teal;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            
+        }
+    }
+
+    width: 300px;
+    table{
+        width: 100%;
+        thead{
+            th{
+                background-color: darkcyan;
+                color: white;
+            }
+        }
+        tbody{
+            td{
+                background-color: gray;
+                color: white;
+                text-align: center;
+                button.delete{
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    padding: 5px;
+                    text-transform: capitalize;
+                }
+            }
+                .tdDelete{
+                    background-color: darkred;
+                }
+
+            .save{
+                td{
+                    background-color: teal;
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 18px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 600px;
+        label{
+            display: flex;
+            gap: 10px;
+            width: fit-content;
+            .icon{
+                cursor: pointer;
+            }
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}

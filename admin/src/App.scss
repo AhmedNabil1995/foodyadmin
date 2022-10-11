@@ -1,0 +1,137 @@
+.App.darkmode{
+    background-color: #111;
+    color: #aaa;
+    min-height: 100vh;
+    .navbar{
+        background-color: #111;
+        color: #aaa;
+    }
+    .sidebar{
+        background-color: #111;
+        color: #aaa;
+        border-right-color:#444 ;
+        .hr{
+            border-color: #444;
+        }
+        .top{
+            span.logo{
+                color: #aaa;
+            }
+        }
+        .center{
+            ul{
+                li{
+                    &:hover{
+                        background-color: #555;
+                    }
+                    .icon{
+                        color: #ddd ;
+                    }
+                }
+            }
+        }
+            
+    }
+    .navbar{
+        border-bottom-color: #555;
+        .left{
+            .searchContainer{
+                border-color: #555;
+                input{
+                    background-color: transparent;
+                    color: #888;
+                }
+            }
+        }
+    }
+
+    .chart{
+        .chartGrid{
+            stroke: #888;
+        }
+    }
+    .table{
+        background-color: #111;
+        .t{
+            background-color: #111;
+            .tableCell{
+                color: #aaa;
+            }
+        }
+    }
+
+    .dataTable{
+        background-color: #111;
+        color: #aaa;
+        .datagrid{
+            color: #aaa;
+            div.view{
+                border-color: blue;
+                color: blue;
+            }
+        }
+    }
+
+    input{
+        background-color: transparent !important;
+    }
+    .ingredients{
+        input{
+            color: #aaa;
+            border: 1px solid #aaa;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+        form{
+            input{
+                color: #aaa;
+            }
+            button{
+                background-color: #333;
+            }
+        }
+
+        table{
+            columns: #aaa;
+            thead{
+                th{
+                    background-color: #222;
+                    color: #aaa;
+                }
+            }
+            tbody{
+                td{
+                    color: #aaa;
+                    background-color: #333;
+                }
+            }
+        }
+        button{
+            color: #aaa;
+        }
+    } 
+    hr{
+        border-color: #888 !important;
+        height: 0;
+        border-style: solid;
+    }   
+
+    .RichEditor-root{
+        background-color: #111;
+        color: #aaa;
+    }
+    input{
+        color: #aaa !important;
+    }
+
+    .updateMeal{
+        .newContainer{
+            border-left:1px solid #444 ;
+        }
+    }
+}
+body{
+    height: 100%;
+}
+

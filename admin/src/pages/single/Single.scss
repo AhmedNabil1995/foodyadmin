@@ -1,0 +1,89 @@
+.single{
+    display: flex;
+
+    .singleContainer{
+        flex: 6;  
+        
+        .top{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            .left{
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 10px;
+                padding: 20px;
+                flex: 2;
+                position: relative;
+                .editButton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 14px;
+                    background-color: rgb(230, 203, 255);
+                    color: blueviolet;
+                    padding: 3px;
+                    border-radius: 0 0 0 2px;
+                    cursor: pointer;
+                    border: none;
+                }
+                .title{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #aaa;
+                    margin-bottom: 10px;
+                }
+
+                .items{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 30px;
+                    .itemImg{
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .itemTitle{
+                            font-size: 30px;
+                        }
+
+                        .detailItem{
+                            margin-top: 10px;
+                            .itemKey{
+                                font-size: 14px;
+                                margin-right: 10px;
+                                font-weight: bold;
+                            }
+                            .itemValue{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                flex: 4;
+            }
+        }
+
+        .bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            p{
+                margin-bottom: 15px;
+                font-weight: 300;
+            }
+        }
+    }
+
+}

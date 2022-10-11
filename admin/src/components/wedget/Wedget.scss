@@ -1,0 +1,53 @@
+.wedget{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    display: flex;  
+    justify-content: space-between;
+    height: 120px;
+  .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title{
+        font-weight: 400;
+        color: #aaa;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .counter{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .link{
+        font-size: 13px;
+        font-weight: 500;
+        border-bottom: 2px dotted #aaa;
+    }
+  }
+
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .icon{
+        align-self: flex-end;
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .persentage{
+        display: flex;
+        color: green;
+        font-size: 15px;
+    }
+    .persentage.negative{
+      color: red;
+    }
+  }
+}

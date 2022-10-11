@@ -1,0 +1,114 @@
+.order{
+    display: flex;
+
+    .orderContainer{
+        flex: 6;
+        .bottom{
+            padding: 20px;
+
+            h1{
+                font-size: 18px;
+                span{
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
+            .userInfo{
+
+                h3{
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0;
+                width: fit-content;
+
+            }
+
+            .productsInfo{
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0;
+                width: fit-content;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                h3{
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .product{
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 10px;
+                padding: 20px;
+                }
+            }
+        }
+        
+    }
+
+    .info{
+        margin: 6px 0;
+        .key{
+            font-weight: 500;
+        }
+        .value{
+            font-weight: 300;
+            margin-left: 10px;
+        }
+    }
+
+           .status{
+            padding: 5px;
+            border-radius: 5px;
+
+        
+            &.approved {
+              color: green;
+              background-color: rgba(0, 128, 0, 0.151);
+            }
+            &.pending {
+              color: goldenrod;
+              background-color: rgba(189, 189, 3, 0.103);
+            }
+
+            &.rejected {
+                background-color: rgba(255, 0, 0, 0.05);
+                color: crimson;
+              }
+              &.completed {
+                background-color: rgb(151, 151, 228);
+                color: darkblue;
+              }
+           }
+
+        select{
+            margin-left: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            outline: none;
+            background-color: deepskyblue;
+            color: white;
+            font-size: 17px;
+        }
+        .confirm{
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            color: white;
+            background-color: teal;
+            border-radius: 5px;
+            font-size: 17px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+}

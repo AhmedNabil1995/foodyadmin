@@ -1,0 +1,104 @@
+.instructions{
+    margin: 20px;
+    
+    form{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        max-width: 100%;
+        gap: 10px;
+        position: relative;
+        .viewImage{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .formInput{
+            display: flex;
+    
+            gap: 5px;
+            label{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                width: fit-content;
+            }
+            .imgUrl{
+                width: 50%;
+            }
+            .icon{
+                cursor: pointer;
+            }
+            input{
+                outline: none;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 5px 15px;
+                width: 80%;
+                font-size: 17px;
+            }
+        }
+        button{
+            background-color: teal;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            width: 100x;
+            padding: 5px 10px;
+            font-size: 18px;
+            &:disabled{
+                cursor: not-allowed;
+                background-color: #ddd;
+            }
+        }
+    }
+    .viewInstructionContainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+        margin-top: 20px;
+        .viewInstructions{
+            text-align: center;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px;
+            max-width: 100%;
+
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            button{
+                background-color: teal;
+                color: white;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                width: 100x;
+                padding: 5px 10px;
+                font-size: 18px;
+                margin: 5px;
+            }
+
+            .delete{
+                background-color: brown;
+            }
+    
+        }
+    }   
+}

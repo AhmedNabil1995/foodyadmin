@@ -1,0 +1,100 @@
+.update{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 2;
+background-color: rgba(0,0,0,0.8);      
+
+
+        .updateContainer{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 30px;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            width: 60%;
+            position: relative;
+
+            .close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                padding: 20px;
+                font-size: 30px;
+                color: red;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            .left{
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                img{
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right{
+                flex: 2;
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .formInput{
+                        width: 40%;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 50px;
+                        input{
+                            border: none;
+                            border-bottom: 1px solid #bbb;
+                            margin-top: 5px;
+                            outline: none;
+                        }
+                        label{
+                            font-weight: bold;
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .icon{
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    button{
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: 10px;                        
+                   }
+                   
+                   &:disabled{
+                    background-color: #ddd;
+                    cursor: not-allowed;
+                   }
+            }
+        }
+    }
+}
